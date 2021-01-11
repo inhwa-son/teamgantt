@@ -41,39 +41,50 @@ public class TasksBody {
     private final String wbs;
     private final String work_days_left;
 
+
+    @Getter
+    @AllArgsConstructor
     public static class checklist_info {
-        private Integer count;
-        private Integer completed;
+        private final Integer count;
+        private final Integer completed;
     }
 
+    @Getter
+    @AllArgsConstructor
     public static class comment_info {
-        private Integer count;
-        private Boolean has_unread;
+        private final Integer count;
+        private final Boolean has_unread;
     }
 
+    @Getter
+    @AllArgsConstructor
     public static class dependencies {
-        private List<String> parents;
-        private List<String> children;
+        private final List<String> parents;
+        private final List<String> children;
     }
 
+    @Getter
+    @AllArgsConstructor
     public static class document_info {
-        private Integer count;
-        private String edit_date;
-        private String view_date;
-        private Boolean has_unread;
+        private final Integer count;
+        private final String edit_date;
+        private final String view_date;
+        private final Boolean has_unread;
     }
 
+    @Getter
+    @AllArgsConstructor
     public static class resources {
-        private String color;
-        private Integer hours_per_day;
-        private Integer id;
-        private String name;
-        private String pic;
-        private Integer project_id;
-        private Integer task_id;
-        private Integer total_hours;
-        private String type;
-        private Integer type_id;
+        private final String color;
+        private final Integer hours_per_day;
+        private final Integer id;
+        private final String name;
+        private final String pic;
+        private final Integer project_id;
+        private final Integer task_id;
+        private final Integer total_hours;
+        private final String type;
+        private final Integer type_id;
     }
 
 }

@@ -6,6 +6,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class CreateSignIn {
-    private String user;
-    private String pass;
+    private final String user;
+    private final String pass;
 }
